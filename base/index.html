@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>工作流</title>
+	<link rel="stylesheet" type="text/css" href="css/layui.css">
+		<link rel="stylesheet" type="text/css" href="css/pitaya-pc-base.css">	
+		<link rel="stylesheet" type="text/css" href="css/workflow.css">
+	</head>
+	<body>
+		<div class="layui-fluid pitaya-layui-fluid">
+		    <div class="layui-card pitaya-layui-card">
+		        <header class="layui-card-header pitaya-layui-card-header">
+		            <button class="layui-btn layui-btn-sm pitaya-btn layui-btn-normal" id="SaveButton"  onclick="save()">保存画布</button>
+		           <!--  <button class="layui-btn layui-btn-sm pitaya-btn layui-btn-normal" id="SaveButton"  onclick="load()">加载画布</button>	 -->	            
+		        </header>
+		        <section class="layui-card-body pitaya-card-body">
+		            <div class="layui-col-md3 layui-col-lg2 pitaya-card-left">
+		                <div class="layui-card pitaya-left-tree">
+		                    <div class="layui-card-header pitaya-layui-card-header  pitaya-title" title="工具栏">
+		                       工具栏
+		                    </div>
+		                    <div class="layui-card-body pitaya-card-body">
+		                    	<div id="myPaletteDiv" style="height:100%;width:p100%;">
+		                    	</div>
+		                    </div>
+		                </div>
+		            </div>
+		            <!-- 右侧 -->
+		            <div class="layui-col-md9 layui-col-lg10 pitaya-card-right">
+		                <div class="layui-card pitaya-full">
+		                    <div class="layui-card-header pitaya-layui-card-header  pitaya-title">
+		                        我是画布名称
+		                    </div>
+		                    <div class="layui-card-body pitaya-card-table pitaya-defined-padding">
+		                    	<div id="myDiagramDiv" style="width:100%;height:100%">
+		                    	</div>                       
+		                    </div>
+		                </div>
+		            </div>
+		        </section>
+		    </div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/go-debug2.js"></script>
+<script type="text/javascript" src="js/workflow.js"></script>
